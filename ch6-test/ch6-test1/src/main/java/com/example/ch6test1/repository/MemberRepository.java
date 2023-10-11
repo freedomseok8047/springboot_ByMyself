@@ -3,7 +3,6 @@ package com.example.ch6test1.repository;
 
 import com.example.ch6test1.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
-<<<<<<< HEAD
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.query.Param;
@@ -50,11 +49,4 @@ public interface MemberRepository extends JpaRepository<Member, Long>,
 //    List<Member> findByUserDescriptionByNative(@Param("userDescription") String userDescription);
 
 }
-=======
 
-public interface MemberRepository extends JpaRepository<Member, Long> {
-
-    Member findByEmail(String email);
-
-}
->>>>>>> origin/ljs_0927

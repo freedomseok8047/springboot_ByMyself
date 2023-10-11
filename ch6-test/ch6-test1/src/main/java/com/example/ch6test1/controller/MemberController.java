@@ -1,7 +1,7 @@
 package com.example.ch6test1.controller;
 
 import com.example.ch6test1.dto.MemberFormDto;
-<<<<<<< HEAD
+
 import com.example.ch6test1.dto.MemberSearchDto;
 import com.example.ch6test1.entity.Member;
 import com.example.ch6test1.service.MemberService;
@@ -9,29 +9,28 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-=======
+
 import com.example.ch6test1.entity.Member;
 import com.example.ch6test1.service.MemberService;
 import lombok.RequiredArgsConstructor;
->>>>>>> origin/ljs_0927
+
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-<<<<<<< HEAD
+
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
-=======
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
->>>>>>> origin/ljs_0927
 
 @RequestMapping("/members")
 @Controller
@@ -76,7 +75,7 @@ public class MemberController {
         return "/member/memberLoginForm";
     }
 
-<<<<<<< HEAD
+
     // 회원 관리 페이지 링킹
     @GetMapping(value = {"/admin"})
     public String memberManage(MemberSearchDto memberSearchDto, @PathVariable("page") Optional<Integer> page, Model model){
@@ -126,6 +125,5 @@ public class MemberController {
 
         return "redirect:/";
     }
-=======
->>>>>>> origin/ljs_0927
+
 }

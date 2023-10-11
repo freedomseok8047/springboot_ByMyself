@@ -104,11 +104,9 @@ public class ItemController {
 
         return "redirect:/";
     }
-<<<<<<< HEAD
-    // 상품 관리 페이지 링킹
-=======
 
->>>>>>> origin/ljs_0927
+    // 상품 관리 페이지 링킹
+
     @GetMapping(value = {"/admin/items", "/admin/items/{page}"})
     public String itemManage(ItemSearchDto itemSearchDto, @PathVariable("page") Optional<Integer> page, Model model){
 

@@ -1,7 +1,7 @@
 package com.example.ch6test1.service;
 
 
-<<<<<<< HEAD
+
 import com.example.ch6test1.dto.MemberFormDto;
 import com.example.ch6test1.dto.MemberSearchDto;
 import com.example.ch6test1.entity.Member;
@@ -9,11 +9,7 @@ import com.example.ch6test1.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-=======
-import com.example.ch6test1.entity.Member;
-import com.example.ch6test1.repository.MemberRepository;
-import lombok.RequiredArgsConstructor;
->>>>>>> origin/ljs_0927
+
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -21,11 +17,11 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-<<<<<<< HEAD
+
 import javax.persistence.EntityNotFoundException;
 
-=======
->>>>>>> origin/ljs_0927
+
+
 @Service
 @Transactional
 @RequiredArgsConstructor
@@ -61,7 +57,7 @@ public class MemberService implements UserDetailsService {
                 .build();
     }
 
-<<<<<<< HEAD
+
     @Transactional(readOnly = true)
     public Page<Member> getAdminMemberPage(MemberSearchDto memberSearchDto, Pageable pageable){
         return memberRepository.getAdminMemberPage(memberSearchDto, pageable);
@@ -88,6 +84,6 @@ public class MemberService implements UserDetailsService {
         return member.getId();
     }
 
-=======
->>>>>>> origin/ljs_0927
+
+
 }

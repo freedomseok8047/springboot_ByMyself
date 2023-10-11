@@ -86,11 +86,8 @@ public class ItemService {
 
         return item.getId();
     }
-<<<<<<< HEAD
     //아이템 관리 페이지를 여는 로직
-=======
 
->>>>>>> origin/ljs_0927
     @Transactional(readOnly = true)
     public Page<Item> getAdminItemPage(ItemSearchDto itemSearchDto, Pageable pageable){
         return itemRepository.getAdminItemPage(itemSearchDto, pageable);

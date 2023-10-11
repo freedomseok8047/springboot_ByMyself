@@ -45,7 +45,8 @@ public class Member extends BaseEntity {
     }
 
 
-    public void updateMember(MemberFormDto memberFormDto){
+    public void
+    updateMember(MemberFormDto memberFormDto){
         this.name = memberFormDto.getName();
         this.email= memberFormDto.getEmail();
         this.address = memberFormDto.getAddress();
